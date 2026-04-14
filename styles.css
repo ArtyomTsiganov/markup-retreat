@@ -1,1 +1,29 @@
-/* Пиши стили тут */
+    .rating input {
+    display: none;
+    }
+
+.rating img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+
+.rating img {
+    content: url("img/star-empty.png")
+}
+
+.rating input:checked ~ label img {
+    content: url("img/star.svg");
+}
+
+.rating input:checked label img {
+    content: url("img/star.svg");
+}
+
